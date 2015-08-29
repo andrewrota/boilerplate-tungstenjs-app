@@ -1,0 +1,27 @@
+{
+  "name": "boilerplate_tungstejs_app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "",
+  "main": "js/app.js",
+  "dependencies": {
+    "babel-core": "^5.8.23",
+    "babel-loader": "^5.3.2",
+    "express": "^4.13.3",
+    "firebase": "^2.2.9",
+    "hogan-express": "^0.5.2",
+    "opener": "^1.4.1",
+    "tungstenjs": "^0.5.3",
+    "underscore": "^1.8.3",
+    "webpack": "^1.12.0",
+    "webpack-dev-middleware": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/webpack/bin/webpack.js -d",
+    "start": "node ./server.js"
+  },
+  "author": "Andrew Rota <rota.andrew@gmail.com>",
+  "license": "MIT"
+}
