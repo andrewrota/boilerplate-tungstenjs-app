@@ -3,7 +3,7 @@
  */
 'use strict';
 
-import { View } from 'tungstenjs/adaptors/backbone';
+import { View } from 'tungstenjs';
 import {on} from '../decorators';
 import _ from 'underscore';
 

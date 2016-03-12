@@ -3,6 +3,6 @@
  */
 'use strict';
 
-import { Model } from 'tungstenjs/adaptors/backbone';
+import { Model } from 'tungstenjs';
 
 export class AppModel extends Model {}

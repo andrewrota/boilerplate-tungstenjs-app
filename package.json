@@ -5,18 +5,24 @@
   "description": "",
   "main": "js/app.js",
   "dependencies": {
-    "babel-core": "^5.8.23",
-    "babel-loader": "^5.3.2",
-    "express": "^4.13.3",
-    "firebase": "^2.2.9",
-    "hogan-express": "^0.5.2",
+    "babel-core": "6.4.5",
+    "babel-loader": "6.2.1",
+    "babel-plugin-syntax-flow": "^6.3.13",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-flow-strip-types": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-1": "^6.3.13",
+    "express": "4.13.3",
+    "hogan-express": "0.5.2",
     "opener": "^1.4.1",
-    "tungstenjs": "^0.5.3",
+    "tungstenjs": "git+http://github.com/wayfair/tungstenjs.git#master",
     "underscore": "^1.8.3",
-    "webpack": "^1.12.0",
-    "webpack-dev-middleware": "^1.2.0"
+    "webpack": "1.12.12",
+    "webpack-dev-middleware": "1.5.1 "
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-plugin-transform-decorators": "^6.6.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./node_modules/webpack/bin/webpack.js -d",
