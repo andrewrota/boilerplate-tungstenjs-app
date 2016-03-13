@@ -1,6 +1,5 @@
 var path = require('path');
-
-module.exports = (function () {
+module.exports = (function() {
   'use strict';
   return {
     entry: './js/app',
@@ -9,15 +8,22 @@ module.exports = (function () {
       path: path.resolve('.')
     },
     resolveLoader: {
-      modulesDirectories: [path.join(__dirname, 'node_modules')]
+      modulesDirectories: [path.join(__dirname, 'loaders'), path.join(__dirname, 'node_modules')]
     },
     devtool: '#source-map',
     module: {
-      loaders: [{
-        test: /\.jsx?$/,
-        loader: 'babel',
-        exclude: /node_modules/
-      }]
+      loaders: [
+        {
+          test: /\.js$/,
+          loader: 'babel',
+          exclude: /node_modules/
+        },
+        {
+          test: /\.mustache$/,
+          loader: 'template_loader',
+          exclude: /node_modules/
+        }
+      ]
     }
   };
 }());

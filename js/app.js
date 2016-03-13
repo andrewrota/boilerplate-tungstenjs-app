@@ -3,7 +3,7 @@ import { AppModel } from './models/app_model';
 import template from '../templates/app.mustache';
 
 new AppView({
-  el: '#appwrapper',
+  el: document.getElementById('appwrapper'),
   template: template,
   model: new AppModel(window.data)
 });
