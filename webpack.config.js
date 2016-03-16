@@ -8,7 +8,7 @@ module.exports = (function() {
       path: path.resolve('.')
     },
     resolveLoader: {
-      modulesDirectories: [path.join(__dirname, 'loaders'), path.join(__dirname, 'node_modules')]
+      modules: [path.join(__dirname, 'loaders'), path.join(__dirname, 'node_modules')]
     },
     devtool: '#source-map',
     module: {
