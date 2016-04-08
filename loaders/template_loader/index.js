@@ -1,1 +1,1 @@
-module.exports = require('tungstenjs').compiler;
+module.exports = require('tungstenjs').precompiler;
