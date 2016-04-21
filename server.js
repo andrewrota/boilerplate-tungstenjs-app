@@ -13,7 +13,14 @@ var express = require('express'),
   webpackConfig = require('./webpack.config.js'),
   opener = require('opener');
 
-var compiler = webpack(webpackConfig);
+var debug = false;
+
+process.argv.forEach((option) => {
+  if(option === '--env.dev=true') {
+    debug = true;
+  }
+});
+var compiler = webpack(webpackConfig({dev: debug}));
 
 var app = express();
 
